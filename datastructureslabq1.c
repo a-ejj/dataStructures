@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//Klavyeden -1 girilinceye kadar girilen sayýlardan tek olanlarý listenin baþýna, çift olanlarý listenin sonuna ekleyen program.
+//Klavyeden -1 girilinceye kadar girilen sayilardan tek olanlari listenin basina, Ã§ift olanlari listenin sonuna ekleyen program.
 
 struct nde{
 	int data;
@@ -20,7 +20,7 @@ int main(){
 	head->next=NULL;
 	printf("Liste elemanlarini giriniz. \n(-1 girildikten sonra program sonlanacaktir.)\n\n--->");
 	head=addNode(head);		//dugum ekleme islemi
-	traverseList(head);		//listeyi ekrana yazdýrma
+	traverseList(head);		//listeyi ekrana yazdirma
 	
 	while(head!=NULL){		//islemler bittikten sonra listeyi bellekten salma islemi
 		node *temp2=head;
@@ -65,8 +65,8 @@ node* addLast(node *head, int veri){
 	temp->next=NULL;		//gecici degiskenin sonraki dugumu NULL'a ayarlanir.
 	node *temp2=head;		//listenin basini kaybetmemek icin yeni bir gecici degisken olusturulur.
 	while(temp2->next!=NULL)
-		temp2=temp2->next;		//listenin son elemanýna gelene kadar kaydýrma yapýlýr.
-	temp2->next=temp;			//listenin son elemanýný sonraki gosterimi gecici degiskene ayarlanýr. 
+		temp2=temp2->next;		//listenin son elemanina gelene kadar kaydirma yapilir.
+	temp2->next=temp;			//listenin son elemanini sonraki gosterimi gecici degiskene ayarlanir. 
 								//boylelikle listeye sondan eleman eklenmis olur.
 	return head;
 }
@@ -77,7 +77,7 @@ void traverseList(node *head){
 	else{
 		printf("Listenin son hali:\n");
 		while(head!=NULL){
-			printf("%d	", head->data);		//Listede dolanýlarak ekrana veriler yazdýrýlýr.
+			printf("%d	", head->data);		//Listede dolanilarak ekrana veriler yazdirilir.
 			head=head->next;
 		}
 	}
