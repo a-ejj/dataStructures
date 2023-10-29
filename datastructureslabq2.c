@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-//Listeye rastgele eklenmiþ 100 sayýnýn büyükten küçüðe sýralanmasý
+//Listeye rastgele eklenmis 100 sayinin kucukten buyuge siralanmasi
 
 struct dugum{
 	int data; struct dugum *next;
